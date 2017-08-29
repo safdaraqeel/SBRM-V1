@@ -7,7 +7,7 @@ Dependencies:
 2- Apache Maven
 3- jMetal Framework (A framework implementing multi-objectives search algorithms )
 4- Weka Tool API 3.7.5 (An API implementing several machine learning algorithms)
-5- Apache POI (API for read/writing excel files)
+5- Apache POI (API for reading/writing excel files)
 6- Apache Common IO (API for manipulating files)
 
 
