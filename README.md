@@ -1,6 +1,6 @@
 # Search-Based Rule Mining (SBRM) Implementation
 
-Search-Based Rule Mining (SBRM) is an approach that combines multi-objective search algorithms with machine learning algorithms to mine the cross product line (CPL) rules for interacting products within/accross the product lines.
+Search-Based Rule Mining (SBRM) is an approach that combines multi-objective search algorithms with machine learning algorithms to mine the cross product line (CPL) rules for interacting products within/accross the product lines.Such rules constraint the configuraitons (Antecedents) of interacting products while indicating the corresponding system states (Consequents).
 
 Dependencies:
 1- Java 8
