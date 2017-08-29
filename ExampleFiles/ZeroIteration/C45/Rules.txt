@@ -1,0 +1,304 @@
+
+
+J48 pruned tree
+------------------
+
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = sip: Failed (39.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = aim AND product1_DefaultTransportProtocol = auto AND product2_MaxTransmitedCallRate <= 3161: Connected (6.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = aim AND product1_DefaultTransportProtocol = auto AND product2_MaxTransmitedCallRate > 3161: Failed (4.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = aim AND product1_DefaultTransportProtocol = udp AND product1_DefaultCallRate <= 1732: Failed (7.0/2.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = aim AND product1_DefaultTransportProtocol = udp AND product1_DefaultCallRate > 1732: Connected (11.0/4.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = aim AND product1_DefaultTransportProtocol = tcp: Failed (8.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = aim AND product1_DefaultTransportProtocol = tls: Failed (12.0/5.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = googletalk: Failed (46.0/18.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = icq AND product1_MaxTransmitedCallRate <= 2622 AND product2_MaxReceivedCallRate <= 4553: Failed (11.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = icq AND product1_MaxTransmitedCallRate <= 2622 AND product2_MaxReceivedCallRate > 4553: Connected (4.0/1.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = icq AND product1_MaxTransmitedCallRate > 2622: Connected (20.0/2.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = auto AND product1_SipMode = off: Connected (2.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = auto AND product1_SipMode = on: Failed (3.0/1.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = h264 AND product1_Resolution = 1080: Connected (1.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = h264 AND product1_Resolution = 720: Connected (1.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = h264 AND product1_Resolution = 480: Failed (2.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = h264 AND product1_Resolution = 360: Connected (3.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = h264 AND product1_Resolution = 240: Failed (4.0/1.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = red: Connected (6.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = rtx AND product1_DefaultTransportProtocol = auto: Connected (0.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = rtx AND product1_DefaultTransportProtocol = udp: Failed (2.0/1.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = rtx AND product1_DefaultTransportProtocol = tcp: Connected (3.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = rtx AND product1_DefaultTransportProtocol = tls: Failed (2.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = ulpfec: Failed (11.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = vp8: Failed (3.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = iptel.org: Failed (42.0/10.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = irc AND product1_Encryption = off AND product1_MaxReceivedCallRate <= 4074: Failed (11.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = irc AND product1_Encryption = off AND product1_MaxReceivedCallRate > 4074: Connected (4.0/1.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = irc AND product1_Encryption = on AND product2_Encryption = off: Failed (5.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = irc AND product1_Encryption = on AND product2_Encryption = on: Connected (11.0/3.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = irc AND product1_Encryption = on AND product2_Encryption = besteffort: Connected (8.0/1.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = irc AND product1_Encryption = besteffort: Connected (10.0/2.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = h323 AND product1_MTU <= 832: Connected (15.0/5.0)
+product1_VideoCodec = auto AND product1_DefaultCallProtocol = h323 AND product1_MTU > 832: Failed (21.0/8.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = sip: Failed (38.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = aim AND product2_MaxTransmitedCallRate <= 4113 AND product2_Resolution = 1080 AND product2_H323Mode = off: Connected (3.0/1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = aim AND product2_MaxTransmitedCallRate <= 4113 AND product2_Resolution = 1080 AND product2_H323Mode = on: Failed (4.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = aim AND product2_MaxTransmitedCallRate <= 4113 AND product2_Resolution = 720: Failed (7.0/1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = aim AND product2_MaxTransmitedCallRate <= 4113 AND product2_Resolution = 480: Connected (9.0/2.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = aim AND product2_MaxTransmitedCallRate <= 4113 AND product2_Resolution = 360: Failed (9.0/1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = aim AND product2_MaxTransmitedCallRate <= 4113 AND product2_Resolution = 240: Failed (6.0/1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = aim AND product2_MaxTransmitedCallRate > 4113: Connected (6.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = googletalk: Failed (36.0/11.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = auto: Connected (0.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = opus-48000: Connected (1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = silk-24000: Connected (0.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = silk-16000: Failed (5.0/1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = g722-16000: Connected (3.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = speex-32000 AND product2_DefaultTransportProtocol = auto: Failed (0.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = speex-32000 AND product2_DefaultTransportProtocol = udp: Failed (2.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = speex-32000 AND product2_DefaultTransportProtocol = tcp: Failed (0.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = speex-32000 AND product2_DefaultTransportProtocol = tls: Connected (2.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = speex-16000: Connected (3.0/1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = pcmu-8000: Connected (4.0/1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = pcma-8000: Failed (1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = ilbc-8000: Connected (0.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = gsm-8000: Failed (2.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = speex-8000: Failed (1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = amr-wb-16000: Failed (1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = silk-12000: Connected (1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = silk-8000: Connected (2.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = icq AND product1_AudioCodec = telephone-event-80000: Failed (1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = ippi AND product1_DefaultCallRate <= 1402: Connected (13.0/1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = ippi AND product1_DefaultCallRate > 1402: Failed (29.0/7.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = auto AND product2_ListenPort = on: Connected (5.0/1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = auto AND product2_ListenPort = off: Failed (4.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = h264 AND product1_MTU <= 689: Connected (2.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = h264 AND product1_MTU > 689: Failed (4.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = red: Connected (10.0/4.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = rtx AND product2_Encryption = off: Connected (6.0/1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = rtx AND product2_Encryption = on: Failed (3.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = rtx AND product2_Encryption = besteffort: Connected (0.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = ulpfec: Failed (10.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = vp8: Failed (3.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = irc AND product2_DefaultCallProtocol = sip: Connected (7.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = irc AND product2_DefaultCallProtocol = aim AND product1_MTU <= 1190: Failed (3.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = irc AND product2_DefaultCallProtocol = aim AND product1_MTU > 1190: Connected (3.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = irc AND product2_DefaultCallProtocol = googletalk: Connected (2.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = irc AND product2_DefaultCallProtocol = icq AND product2_DefaultTransportProtocol = auto: Connected (2.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = irc AND product2_DefaultCallProtocol = icq AND product2_DefaultTransportProtocol = udp: Connected (3.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = irc AND product2_DefaultCallProtocol = icq AND product2_DefaultTransportProtocol = tcp: Failed (2.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = irc AND product2_DefaultCallProtocol = icq AND product2_DefaultTransportProtocol = tls: Failed (2.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = irc AND product2_DefaultCallProtocol = ippi AND product1_SipMode = off: Failed (2.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = irc AND product2_DefaultCallProtocol = ippi AND product1_SipMode = on: Connected (2.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = irc AND product2_DefaultCallProtocol = iptel.org AND product1_MaxTransmitedCallRate <= 3449: Connected (5.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = irc AND product2_DefaultCallProtocol = iptel.org AND product1_MaxTransmitedCallRate > 3449: Failed (3.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = irc AND product2_DefaultCallProtocol = irc: Connected (5.0/1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = irc AND product2_DefaultCallProtocol = h323: Failed (3.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = h323 AND product2_Encryption = off AND product2_ListenPort = on: Failed (9.0/1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = h323 AND product2_Encryption = off AND product2_ListenPort = off AND product1_ListenPort = on: Connected (4.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = h323 AND product2_Encryption = off AND product2_ListenPort = off AND product1_ListenPort = off: Failed (3.0/1.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = h323 AND product2_Encryption = on: Failed (14.0/4.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = h323 AND product2_Encryption = besteffort AND product1_DefaultCallRate <= 4484: Connected (13.0)
+product1_VideoCodec = h264 AND product1_DefaultCallProtocol = h323 AND product2_Encryption = besteffort AND product1_DefaultCallRate > 4484: Failed (2.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = sip: Failed (43.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = aim AND product1_DefaultTransportProtocol = auto: Connected (7.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = aim AND product1_DefaultTransportProtocol = udp: Failed (9.0/2.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = aim AND product1_DefaultTransportProtocol = tcp: Failed (16.0/8.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = aim AND product1_DefaultTransportProtocol = tls: Failed (10.0/5.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = googletalk: Failed (42.0/7.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = icq AND product1_Encryption = off AND product2_Encryption = off: Connected (5.0/1.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = icq AND product1_Encryption = off AND product2_Encryption = on: Failed (9.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = icq AND product1_Encryption = off AND product2_Encryption = besteffort AND product1_MTU <= 708: Connected (3.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = icq AND product1_Encryption = off AND product2_Encryption = besteffort AND product1_MTU > 708: Failed (3.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = icq AND product1_Encryption = on: Failed (9.0/1.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = icq AND product1_Encryption = besteffort AND product1_SipMode = off AND product2_DefaultCallRate <= 1737: Connected (4.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = icq AND product1_Encryption = besteffort AND product1_SipMode = off AND product2_DefaultCallRate > 1737: Failed (5.0/1.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = icq AND product1_Encryption = besteffort AND product1_SipMode = on: Connected (6.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = auto: Failed (6.0/1.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = h264 AND product2_ListenPort = on: Connected (4.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = h264 AND product2_ListenPort = off: Failed (6.0/1.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = red: Connected (9.0/3.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = rtx AND product2_Resolution = 1080: Failed (1.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = rtx AND product2_Resolution = 720: Connected (2.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = rtx AND product2_Resolution = 480: Connected (1.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = rtx AND product2_Resolution = 360: Connected (2.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = rtx AND product2_Resolution = 240: Failed (3.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = ulpfec: Failed (5.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = vp8: Failed (7.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = auto AND product1_MaxTransmitedCallRate <= 2466: Failed (3.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = auto AND product1_MaxTransmitedCallRate > 2466: Connected (6.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = h264 AND product1_ListenPort = on: Connected (2.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = h264 AND product1_ListenPort = off: Failed (8.0/3.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = red AND product1_DefaultCallRate <= 1584: Connected (2.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = red AND product1_DefaultCallRate > 1584: Failed (4.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = rtx AND product1_H323Mode = off: Connected (4.0/1.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = rtx AND product1_H323Mode = on: Failed (3.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = ulpfec: Failed (13.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = vp8: Failed (8.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = irc AND product2_SipZrtpAttribute = auto: Connected (20.0/9.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = irc AND product2_SipZrtpAttribute = true: Failed (11.0/3.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = irc AND product2_SipZrtpAttribute = false: Connected (19.0/6.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = auto AND product1_MaxTransmitedCallRate <= 2015: Failed (4.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = auto AND product1_MaxTransmitedCallRate > 2015: Connected (2.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = opus-48000: Connected (0.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = silk-24000: Failed (1.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = silk-16000: Connected (4.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = g722-16000: Failed (2.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = speex-32000: Connected (4.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = speex-16000: Connected (5.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = pcmu-8000: Connected (0.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = pcma-8000: Failed (4.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = ilbc-8000: Failed (2.0/1.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = gsm-8000: Failed (2.0/1.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = speex-8000: Connected (2.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = amr-wb-16000: Failed (1.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = silk-12000 AND product1_SipMode = off: Connected (4.0/1.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = silk-12000 AND product1_SipMode = on: Failed (2.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = silk-8000: Connected (2.0)
+product1_VideoCodec = red AND product1_DefaultCallProtocol = h323 AND product1_AudioCodec = telephone-event-80000: Failed (1.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = sip: Failed (36.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = auto: Connected (0.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = opus-48000: Failed (3.0/1.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = silk-24000: Failed (1.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = silk-16000: Connected (0.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = g722-16000: Failed (3.0/1.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = speex-32000: Failed (2.0/1.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = speex-16000: Connected (3.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = pcmu-8000: Connected (1.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = pcma-8000: Failed (5.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = ilbc-8000: Connected (1.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = gsm-8000: Connected (0.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = speex-8000 AND product1_H323Mode = off: Connected (2.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = speex-8000 AND product1_H323Mode = on: Failed (2.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = amr-wb-16000 AND product1_SipMode = off: Connected (2.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = amr-wb-16000 AND product1_SipMode = on: Failed (2.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = silk-12000: Connected (3.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = silk-8000: Failed (1.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = aim AND product1_AudioCodec = telephone-event-80000: Connected (5.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = googletalk AND product2_DefaultCallRate <= 2328: Connected (16.0/4.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = googletalk AND product2_DefaultCallRate > 2328: Failed (27.0/4.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = icq AND product1_Encryption = off: Failed (19.0/2.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = icq AND product1_Encryption = on: Failed (11.0/1.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = icq AND product1_Encryption = besteffort: Connected (14.0/4.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = auto: Connected (8.0/2.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = h264 AND product2_MaxTransmitedCallRate <= 3489: Connected (3.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = h264 AND product2_MaxTransmitedCallRate > 3489: Failed (3.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = red: Failed (12.0/5.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = rtx: Failed (2.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = ulpfec: Failed (6.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = ippi AND product2_VideoCodec = vp8: Failed (4.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = iptel.org: Failed (38.0/10.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = irc AND product1_ListenPort = on AND product1_SipMode = off: Failed (8.0/3.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = irc AND product1_ListenPort = on AND product1_SipMode = on: Connected (16.0/5.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = irc AND product1_ListenPort = off: Failed (21.0/4.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = h323 AND product2_MaxReceivedCallRate <= 4584 AND product2_DefaultTransportProtocol = auto AND product1_SipZrtpAttribute = auto: Connected (4.0/1.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = h323 AND product2_MaxReceivedCallRate <= 4584 AND product2_DefaultTransportProtocol = auto AND product1_SipZrtpAttribute = true: Failed (3.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = h323 AND product2_MaxReceivedCallRate <= 4584 AND product2_DefaultTransportProtocol = auto AND product1_SipZrtpAttribute = false: Failed (1.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = h323 AND product2_MaxReceivedCallRate <= 4584 AND product2_DefaultTransportProtocol = udp AND product1_MTU <= 771: Failed (3.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = h323 AND product2_MaxReceivedCallRate <= 4584 AND product2_DefaultTransportProtocol = udp AND product1_MTU > 771: Connected (4.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = h323 AND product2_MaxReceivedCallRate <= 4584 AND product2_DefaultTransportProtocol = tcp: Failed (5.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = h323 AND product2_MaxReceivedCallRate <= 4584 AND product2_DefaultTransportProtocol = tls: Failed (4.0)
+product1_VideoCodec = rtx AND product1_DefaultCallProtocol = h323 AND product2_MaxReceivedCallRate > 4584: Connected (5.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = sip: Failed (46.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = aim: Connected (36.0/17.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = googletalk AND product2_VideoCodec = auto: Failed (9.0/3.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = googletalk AND product2_VideoCodec = h264 AND product2_Encryption = off AND product1_MaxReceivedCallRate <= 3736: Failed (3.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = googletalk AND product2_VideoCodec = h264 AND product2_Encryption = off AND product1_MaxReceivedCallRate > 3736: Connected (2.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = googletalk AND product2_VideoCodec = h264 AND product2_Encryption = on: Connected (3.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = googletalk AND product2_VideoCodec = h264 AND product2_Encryption = besteffort: Connected (2.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = googletalk AND product2_VideoCodec = red AND product2_SipZrtpAttribute = auto: Failed (5.0/1.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = googletalk AND product2_VideoCodec = red AND product2_SipZrtpAttribute = true: Failed (0.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = googletalk AND product2_VideoCodec = red AND product2_SipZrtpAttribute = false: Connected (3.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = googletalk AND product2_VideoCodec = rtx AND product2_SipZrtpAttribute = auto: Failed (1.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = googletalk AND product2_VideoCodec = rtx AND product2_SipZrtpAttribute = true: Connected (4.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = googletalk AND product2_VideoCodec = rtx AND product2_SipZrtpAttribute = false AND product1_Encryption = off: Failed (2.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = googletalk AND product2_VideoCodec = rtx AND product2_SipZrtpAttribute = false AND product1_Encryption = on: Failed (0.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = googletalk AND product2_VideoCodec = rtx AND product2_SipZrtpAttribute = false AND product1_Encryption = besteffort: Connected (2.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = googletalk AND product2_VideoCodec = ulpfec: Failed (7.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = googletalk AND product2_VideoCodec = vp8: Failed (9.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = icq AND product2_DefaultTransportProtocol = auto AND product1_ListenPort = on AND product1_MaxTransmitedCallRate <= 2841: Failed (4.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = icq AND product2_DefaultTransportProtocol = auto AND product1_ListenPort = on AND product1_MaxTransmitedCallRate > 2841: Connected (3.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = icq AND product2_DefaultTransportProtocol = auto AND product1_ListenPort = off: Failed (7.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = icq AND product2_DefaultTransportProtocol = udp AND product2_SipZrtpAttribute = auto: Connected (1.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = icq AND product2_DefaultTransportProtocol = udp AND product2_SipZrtpAttribute = true: Connected (4.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = icq AND product2_DefaultTransportProtocol = udp AND product2_SipZrtpAttribute = false: Failed (8.0/3.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = icq AND product2_DefaultTransportProtocol = tcp: Connected (13.0/5.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = icq AND product2_DefaultTransportProtocol = tls AND product2_SipMode = off: Connected (3.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = icq AND product2_DefaultTransportProtocol = tls AND product2_SipMode = on: Failed (9.0/3.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = ippi AND product2_MaxReceivedCallRate <= 2079: Failed (12.0/3.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = ippi AND product2_MaxReceivedCallRate > 2079: Connected (27.0/12.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = auto: Connected (3.0/1.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = h264: Connected (8.0/3.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = red AND product1_H323Mode = off: Connected (3.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = red AND product1_H323Mode = on: Failed (2.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = rtx AND product2_DefaultTransportProtocol = auto: Failed (2.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = rtx AND product2_DefaultTransportProtocol = udp: Connected (0.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = rtx AND product2_DefaultTransportProtocol = tcp: Connected (2.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = rtx AND product2_DefaultTransportProtocol = tls: Connected (1.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = ulpfec: Failed (3.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = iptel.org AND product2_VideoCodec = vp8: Failed (11.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = irc: Failed (43.0/19.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = h323 AND product1_ListenPort = on: Connected (22.0/10.0)
+product1_VideoCodec = ulpfec AND product1_DefaultCallProtocol = h323 AND product1_ListenPort = off: Failed (23.0/9.0)
+product1_VideoCodec = vp8: Failed (318.0)
+
+Number of Leaves  : 	235
+
+Size of the tree : 	320
+
+
+Time taken to build model: 0.03 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        1702               85.1    %
+Incorrectly Classified Instances       298               14.9    %
+Kappa statistic                          0.646
+Mean absolute error                      0.196
+Root mean squared error                  0.3131
+Relative absolute error                 45.2994 %
+Root relative squared error             67.31   %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      75.075  %
+Total Number of Instances             2000
+
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+0.914     0.286      0.874     0.914     0.893      0.931    Failed
+0.714     0.086      0.794     0.714     0.752      0.931    Connected
+Weighted Avg.    0.851     0.223      0.848     0.851     0.849      0.931
+
+
+=== Confusion Matrix ===
+
+a    b   <-- classified as AND a = Failed
+a    b   <-- classified as AND b = Connected
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        1331               66.55   %
+Incorrectly Classified Instances       669               33.45   %
+Kappa statistic                          0.2063
+Mean absolute error                      0.344
+Root mean squared error                  0.5004
+Relative absolute error                 79.4891 %
+Root relative squared error            107.5797 %
+Coverage of cases (0.95 level)          88.3    %
+Mean rel. region size (0.95 level)      74.125  %
+Total Number of Instances             2000
+
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+0.778     0.577      0.744     0.778     0.761      0.686    Failed
+0.423     0.222      0.469     0.423     0.445      0.686    Connected
+Weighted Avg.    0.666     0.465      0.657     0.666     0.661      0.686
+
+
+=== Confusion Matrix ===
+
+a    b   <-- classified as AND a = Failed
+a    b   <-- classified as AND b = Connected

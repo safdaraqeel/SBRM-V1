@@ -1,0 +1,718 @@
+
+J48 pruned tree
+------------------
+
+product1_VideoCodec = auto
+|   product1_DefaultCallProtocol = sip: Failed (155.0)
+|   product1_DefaultCallProtocol = aim
+|   |   product1_DefaultTransportProtocol = auto
+|   |   |   product2_MaxTransmitedCallRate <= 3161: Connected (6.0)
+|   |   |   product2_MaxTransmitedCallRate > 3161: Failed (4.0)
+|   |   product1_DefaultTransportProtocol = udp
+|   |   |   product1_DefaultCallRate <= 1732: Failed (7.0/2.0)
+|   |   |   product1_DefaultCallRate > 1732: Connected (11.0/4.0)
+|   |   product1_DefaultTransportProtocol = tcp: Failed (9.0)
+|   |   product1_DefaultTransportProtocol = tls
+|   |   |   product1_MaxReceivedCallRate <= 3597
+|   |   |   |   product1_SipMode = off
+|   |   |   |   |   product2_Encryption = off: Failed (2.0)
+|   |   |   |   |   product2_Encryption = on: Connected (3.0)
+|   |   |   |   |   product2_Encryption = besteffort: Failed (1.0)
+|   |   |   |   product1_SipMode = on: Failed (18.0/1.0)
+|   |   |   product1_MaxReceivedCallRate > 3597: Connected (4.0)
+|   product1_DefaultCallProtocol = googletalk
+|   |   product2_VideoCodec = auto
+|   |   |   product2_MaxReceivedCallRate <= 3447: Failed (4.0)
+|   |   |   product2_MaxReceivedCallRate > 3447: Connected (2.0)
+|   |   product2_VideoCodec = h264
+|   |   |   product1_Encryption = off: Failed (4.0/1.0)
+|   |   |   product1_Encryption = on: Connected (1.0)
+|   |   |   product1_Encryption = besteffort: Connected (5.0)
+|   |   product2_VideoCodec = red
+|   |   |   product2_SipMode = off
+|   |   |   |   product2_H323Mode = off: Failed (4.0)
+|   |   |   |   product2_H323Mode = on: Connected (2.0)
+|   |   |   product2_SipMode = on: Connected (3.0)
+|   |   product2_VideoCodec = rtx
+|   |   |   product1_SipMode = off: Failed (2.0)
+|   |   |   product1_SipMode = on: Connected (4.0)
+|   |   product2_VideoCodec = ulpfec: Failed (10.0)
+|   |   product2_VideoCodec = vp8: Failed (7.0)
+|   product1_DefaultCallProtocol = icq
+|   |   product1_MaxTransmitedCallRate <= 2622
+|   |   |   product2_MaxReceivedCallRate <= 4553: Failed (11.0)
+|   |   |   product2_MaxReceivedCallRate > 4553: Connected (4.0/1.0)
+|   |   product1_MaxTransmitedCallRate > 2622: Connected (20.0/2.0)
+|   product1_DefaultCallProtocol = ippi
+|   |   product2_VideoCodec = auto
+|   |   |   product1_SipMode = off: Connected (2.0)
+|   |   |   product1_SipMode = on: Failed (3.0/1.0)
+|   |   product2_VideoCodec = h264
+|   |   |   product1_Resolution = 1080: Connected (1.0)
+|   |   |   product1_Resolution = 720: Connected (1.0)
+|   |   |   product1_Resolution = 480: Failed (2.0)
+|   |   |   product1_Resolution = 360: Connected (3.0)
+|   |   |   product1_Resolution = 240: Failed (4.0/1.0)
+|   |   product2_VideoCodec = red: Connected (6.0)
+|   |   product2_VideoCodec = rtx
+|   |   |   product1_DefaultTransportProtocol = auto: Connected (0.0)
+|   |   |   product1_DefaultTransportProtocol = udp: Failed (2.0/1.0)
+|   |   |   product1_DefaultTransportProtocol = tcp: Connected (3.0)
+|   |   |   product1_DefaultTransportProtocol = tls: Failed (2.0)
+|   |   product2_VideoCodec = ulpfec: Failed (11.0)
+|   |   product2_VideoCodec = vp8: Failed (4.0)
+|   product1_DefaultCallProtocol = iptel.org: Failed (157.0/28.0)
+|   product1_DefaultCallProtocol = irc
+|   |   product2_Encryption = off
+|   |   |   product1_Encryption = off
+|   |   |   |   product2_DefaultCallRate <= 3275: Failed (12.0/3.0)
+|   |   |   |   product2_DefaultCallRate > 3275: Connected (6.0/2.0)
+|   |   |   product1_Encryption = on: Failed (68.0)
+|   |   |   product1_Encryption = besteffort: Connected (4.0)
+|   |   product2_Encryption = on
+|   |   |   product1_Encryption = off: Failed (8.0)
+|   |   |   product1_Encryption = on
+|   |   |   |   product1_ListenPort = on: Connected (8.0/1.0)
+|   |   |   |   product1_ListenPort = off
+|   |   |   |   |   product1_MaxReceivedCallRate <= 3104
+|   |   |   |   |   |   product1_Resolution = 1080: Failed (8.0)
+|   |   |   |   |   |   product1_Resolution = 720: Failed (3.0/1.0)
+|   |   |   |   |   |   product1_Resolution = 480: Connected (17.0/5.0)
+|   |   |   |   |   |   product1_Resolution = 360: Failed (7.0/2.0)
+|   |   |   |   |   |   product1_Resolution = 240
+|   |   |   |   |   |   |   product1_AudioCodec = auto: Failed (1.0)
+|   |   |   |   |   |   |   product1_AudioCodec = opus-48000: Failed (2.0)
+|   |   |   |   |   |   |   product1_AudioCodec = silk-24000: Connected (37.0/16.0)
+|   |   |   |   |   |   |   product1_AudioCodec = silk-16000: Connected (0.0)
+|   |   |   |   |   |   |   product1_AudioCodec = g722-16000: Connected (0.0)
+|   |   |   |   |   |   |   product1_AudioCodec = speex-32000: Connected (0.0)
+|   |   |   |   |   |   |   product1_AudioCodec = speex-16000: Connected (0.0)
+|   |   |   |   |   |   |   product1_AudioCodec = pcmu-8000: Connected (0.0)
+|   |   |   |   |   |   |   product1_AudioCodec = pcma-8000: Connected (0.0)
+|   |   |   |   |   |   |   product1_AudioCodec = ilbc-8000: Connected (0.0)
+|   |   |   |   |   |   |   product1_AudioCodec = gsm-8000: Connected (0.0)
+|   |   |   |   |   |   |   product1_AudioCodec = speex-8000: Connected (0.0)
+|   |   |   |   |   |   |   product1_AudioCodec = amr-wb-16000: Failed (1.0)
+|   |   |   |   |   |   |   product1_AudioCodec = silk-12000: Connected (0.0)
+|   |   |   |   |   |   |   product1_AudioCodec = silk-8000: Connected (0.0)
+|   |   |   |   |   |   |   product1_AudioCodec = telephone-event-80000: Connected (1.0)
+|   |   |   |   |   product1_MaxReceivedCallRate > 3104: Failed (13.0)
+|   |   |   product1_Encryption = besteffort: Connected (3.0/1.0)
+|   |   product2_Encryption = besteffort: Connected (21.0/7.0)
+|   product1_DefaultCallProtocol = h323
+|   |   product1_AudioCodec = auto: Connected (3.0/1.0)
+|   |   product1_AudioCodec = opus-48000: Failed (3.0)
+|   |   product1_AudioCodec = silk-24000: Failed (38.0/13.0)
+|   |   product1_AudioCodec = silk-16000: Connected (2.0)
+|   |   product1_AudioCodec = g722-16000: Failed (2.0/1.0)
+|   |   product1_AudioCodec = speex-32000: Connected (2.0)
+|   |   product1_AudioCodec = speex-16000: Connected (1.0)
+|   |   product1_AudioCodec = pcmu-8000: Failed (2.0)
+|   |   product1_AudioCodec = pcma-8000: Connected (3.0/1.0)
+|   |   product1_AudioCodec = ilbc-8000: Failed (1.0)
+|   |   product1_AudioCodec = gsm-8000
+|   |   |   product2_MTU <= 858: Connected (2.0)
+|   |   |   product2_MTU > 858: Failed (2.0)
+|   |   product1_AudioCodec = speex-8000: Connected (2.0)
+|   |   product1_AudioCodec = amr-wb-16000
+|   |   |   product1_MTU <= 920: Failed (2.0)
+|   |   |   product1_MTU > 920: Connected (4.0)
+|   |   product1_AudioCodec = silk-12000: Failed (0.0)
+|   |   product1_AudioCodec = silk-8000: Failed (1.0)
+|   |   product1_AudioCodec = telephone-event-80000: Failed (2.0/1.0)
+product1_VideoCodec = h264
+|   product1_DefaultCallProtocol = sip: Failed (53.0)
+|   product1_DefaultCallProtocol = aim
+|   |   product2_MaxTransmitedCallRate <= 4113
+|   |   |   product2_Resolution = 1080
+|   |   |   |   product2_H323Mode = off: Connected (3.0/1.0)
+|   |   |   |   product2_H323Mode = on: Failed (4.0)
+|   |   |   product2_Resolution = 720: Failed (7.0/1.0)
+|   |   |   product2_Resolution = 480: Connected (9.0/2.0)
+|   |   |   product2_Resolution = 360: Failed (9.0/1.0)
+|   |   |   product2_Resolution = 240: Failed (6.0/1.0)
+|   |   product2_MaxTransmitedCallRate > 4113: Connected (6.0)
+|   product1_DefaultCallProtocol = googletalk: Failed (37.0/11.0)
+|   product1_DefaultCallProtocol = icq
+|   |   product1_AudioCodec = auto: Failed (0.0)
+|   |   product1_AudioCodec = opus-48000: Connected (1.0)
+|   |   product1_AudioCodec = silk-24000: Failed (0.0)
+|   |   product1_AudioCodec = silk-16000: Failed (5.0/1.0)
+|   |   product1_AudioCodec = g722-16000: Connected (3.0)
+|   |   product1_AudioCodec = speex-32000
+|   |   |   product2_DefaultTransportProtocol = auto: Failed (0.0)
+|   |   |   product2_DefaultTransportProtocol = udp: Failed (2.0)
+|   |   |   product2_DefaultTransportProtocol = tcp: Failed (0.0)
+|   |   |   product2_DefaultTransportProtocol = tls: Connected (2.0)
+|   |   product1_AudioCodec = speex-16000: Connected (3.0/1.0)
+|   |   product1_AudioCodec = pcmu-8000: Connected (4.0/1.0)
+|   |   product1_AudioCodec = pcma-8000: Failed (1.0)
+|   |   product1_AudioCodec = ilbc-8000: Failed (0.0)
+|   |   product1_AudioCodec = gsm-8000: Failed (2.0)
+|   |   product1_AudioCodec = speex-8000: Failed (1.0)
+|   |   product1_AudioCodec = amr-wb-16000: Failed (1.0)
+|   |   product1_AudioCodec = silk-12000: Failed (2.0/1.0)
+|   |   product1_AudioCodec = silk-8000: Connected (2.0)
+|   |   product1_AudioCodec = telephone-event-80000: Failed (1.0)
+|   product1_DefaultCallProtocol = ippi
+|   |   product1_DefaultCallRate <= 1206
+|   |   |   product2_MaxReceivedCallRate <= 522: Failed (2.0)
+|   |   |   product2_MaxReceivedCallRate > 522: Connected (12.0)
+|   |   product1_DefaultCallRate > 1206
+|   |   |   product1_Encryption = off: Failed (31.0/8.0)
+|   |   |   product1_Encryption = on
+|   |   |   |   product2_MaxReceivedCallRate <= 992: Connected (3.0/1.0)
+|   |   |   |   product2_MaxReceivedCallRate > 992: Failed (26.0)
+|   |   |   product1_Encryption = besteffort
+|   |   |   |   product1_H323Mode = off: Failed (2.0)
+|   |   |   |   product1_H323Mode = on: Connected (4.0)
+|   product1_DefaultCallProtocol = iptel.org
+|   |   product2_VideoCodec = auto: Failed (26.0/10.0)
+|   |   product2_VideoCodec = h264
+|   |   |   product1_MaxTransmitedCallRate <= 3535: Failed (11.0/1.0)
+|   |   |   product1_MaxTransmitedCallRate > 3535: Connected (4.0)
+|   |   product2_VideoCodec = red: Connected (11.0/5.0)
+|   |   product2_VideoCodec = rtx
+|   |   |   product1_Encryption = off
+|   |   |   |   product2_Encryption = off
+|   |   |   |   |   product2_DefaultCallProtocol = sip: Failed (1.0)
+|   |   |   |   |   product2_DefaultCallProtocol = aim: Failed (3.0/1.0)
+|   |   |   |   |   product2_DefaultCallProtocol = googletalk: Connected (2.0)
+|   |   |   |   |   product2_DefaultCallProtocol = icq
+|   |   |   |   |   |   product2_Resolution = 1080
+|   |   |   |   |   |   |   product2_AudioCodec = auto
+|   |   |   |   |   |   |   |   product2_MTU <= 1029: Failed (8.0)
+|   |   |   |   |   |   |   |   product2_MTU > 1029: Connected (12.0/4.0)
+|   |   |   |   |   |   |   product2_AudioCodec = opus-48000: Failed (2.0/1.0)
+|   |   |   |   |   |   |   product2_AudioCodec = silk-24000
+|   |   |   |   |   |   |   |   product2_MaxTransmitedCallRate <= 4005
+|   |   |   |   |   |   |   |   |   product1_ListenPort = on
+|   |   |   |   |   |   |   |   |   |   product1_MaxReceivedCallRate <= 3836: Failed (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   product1_MaxReceivedCallRate > 3836: Connected (3.0)
+|   |   |   |   |   |   |   |   |   product1_ListenPort = off: Failed (5.0/1.0)
+|   |   |   |   |   |   |   |   product2_MaxTransmitedCallRate > 4005: Connected (7.0)
+|   |   |   |   |   |   |   product2_AudioCodec = silk-16000: Failed (3.0/1.0)
+|   |   |   |   |   |   |   product2_AudioCodec = g722-16000: Failed (2.0)
+|   |   |   |   |   |   |   product2_AudioCodec = speex-32000: Failed (2.0)
+|   |   |   |   |   |   |   product2_AudioCodec = speex-16000
+|   |   |   |   |   |   |   |   product2_MaxTransmitedCallRate <= 3803: Failed (3.0)
+|   |   |   |   |   |   |   |   product2_MaxTransmitedCallRate > 3803: Connected (9.0/3.0)
+|   |   |   |   |   |   |   product2_AudioCodec = pcmu-8000: Failed (1.0)
+|   |   |   |   |   |   |   product2_AudioCodec = pcma-8000: Connected (0.0)
+|   |   |   |   |   |   |   product2_AudioCodec = ilbc-8000: Connected (1.0)
+|   |   |   |   |   |   |   product2_AudioCodec = gsm-8000: Connected (0.0)
+|   |   |   |   |   |   |   product2_AudioCodec = speex-8000: Failed (2.0/1.0)
+|   |   |   |   |   |   |   product2_AudioCodec = amr-wb-16000: Connected (3.0)
+|   |   |   |   |   |   |   product2_AudioCodec = silk-12000: Connected (5.0/1.0)
+|   |   |   |   |   |   |   product2_AudioCodec = silk-8000: Connected (1.0)
+|   |   |   |   |   |   |   product2_AudioCodec = telephone-event-80000
+|   |   |   |   |   |   |   |   product2_MaxTransmitedCallRate <= 3893
+|   |   |   |   |   |   |   |   |   product2_ListenPort = on: Connected (5.0)
+|   |   |   |   |   |   |   |   |   product2_ListenPort = off
+|   |   |   |   |   |   |   |   |   |   product2_MaxTransmitedCallRate <= 1475: Connected (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   product2_MaxTransmitedCallRate > 1475: Failed (11.0/4.0)
+|   |   |   |   |   |   |   |   product2_MaxTransmitedCallRate > 3893: Failed (6.0)
+|   |   |   |   |   |   product2_Resolution = 720: Failed (1.0)
+|   |   |   |   |   |   product2_Resolution = 480
+|   |   |   |   |   |   |   product1_MTU <= 793: Connected (2.0)
+|   |   |   |   |   |   |   product1_MTU > 793: Failed (3.0)
+|   |   |   |   |   |   product2_Resolution = 360: Failed (0.0)
+|   |   |   |   |   |   product2_Resolution = 240: Failed (4.0)
+|   |   |   |   |   product2_DefaultCallProtocol = ippi
+|   |   |   |   |   |   product2_MaxTransmitedCallRate <= 2911: Failed (3.0/1.0)
+|   |   |   |   |   |   product2_MaxTransmitedCallRate > 2911: Connected (3.0)
+|   |   |   |   |   product2_DefaultCallProtocol = iptel.org
+|   |   |   |   |   |   product2_Resolution = 1080: Connected (2.0)
+|   |   |   |   |   |   product2_Resolution = 720: Failed (0.0)
+|   |   |   |   |   |   product2_Resolution = 480: Failed (0.0)
+|   |   |   |   |   |   product2_Resolution = 360: Failed (5.0/1.0)
+|   |   |   |   |   |   product2_Resolution = 240: Failed (0.0)
+|   |   |   |   |   product2_DefaultCallProtocol = irc
+|   |   |   |   |   |   product1_DefaultCallRate <= 4626: Failed (6.0)
+|   |   |   |   |   |   product1_DefaultCallRate > 4626: Connected (21.0/9.0)
+|   |   |   |   |   product2_DefaultCallProtocol = h323: Connected (2.0)
+|   |   |   |   product2_Encryption = on: Failed (8.0)
+|   |   |   |   product2_Encryption = besteffort: Failed (0.0)
+|   |   |   product1_Encryption = on: Failed (22.0/1.0)
+|   |   |   product1_Encryption = besteffort: Failed (2.0/1.0)
+|   |   product2_VideoCodec = ulpfec: Failed (41.0)
+|   |   product2_VideoCodec = vp8: Failed (47.0)
+|   product1_DefaultCallProtocol = irc
+|   |   product1_MaxTransmitedCallRate <= 592: Failed (10.0)
+|   |   product1_MaxTransmitedCallRate > 592
+|   |   |   product2_H323Mode = off
+|   |   |   |   product2_Encryption = off
+|   |   |   |   |   product1_MaxReceivedCallRate <= 3165: Failed (11.0)
+|   |   |   |   |   product1_MaxReceivedCallRate > 3165: Connected (4.0/1.0)
+|   |   |   |   product2_Encryption = on
+|   |   |   |   |   product1_Encryption = off: Failed (2.0)
+|   |   |   |   |   product1_Encryption = on: Connected (5.0/1.0)
+|   |   |   |   |   product1_Encryption = besteffort: Connected (4.0)
+|   |   |   |   product2_Encryption = besteffort: Connected (6.0)
+|   |   |   product2_H323Mode = on
+|   |   |   |   product2_DefaultCallRate <= 1122: Failed (2.0)
+|   |   |   |   product2_DefaultCallRate > 1122: Connected (15.0)
+|   product1_DefaultCallProtocol = h323
+|   |   product2_Encryption = off
+|   |   |   product2_ListenPort = on: Failed (9.0/1.0)
+|   |   |   product2_ListenPort = off
+|   |   |   |   product1_ListenPort = on: Connected (4.0)
+|   |   |   |   product1_ListenPort = off: Failed (3.0/1.0)
+|   |   product2_Encryption = on
+|   |   |   product1_MaxReceivedCallRate <= 1233: Connected (4.0)
+|   |   |   product1_MaxReceivedCallRate > 1233: Failed (15.0/2.0)
+|   |   product2_Encryption = besteffort
+|   |   |   product1_DefaultCallRate <= 4484: Connected (13.0)
+|   |   |   product1_DefaultCallRate > 4484: Failed (2.0)
+product1_VideoCodec = red
+|   product1_Encryption = off
+|   |   product2_Encryption = off
+|   |   |   product2_VideoCodec = auto
+|   |   |   |   product1_DefaultCallRate <= 4575: Connected (14.0)
+|   |   |   |   product1_DefaultCallRate > 4575
+|   |   |   |   |   product1_DefaultCallRate <= 4650: Failed (6.0/1.0)
+|   |   |   |   |   product1_DefaultCallRate > 4650: Connected (4.0)
+|   |   |   product2_VideoCodec = h264: Failed (25.0/5.0)
+|   |   |   product2_VideoCodec = red
+|   |   |   |   product1_DefaultCallRate <= 3095: Connected (4.0)
+|   |   |   |   product1_DefaultCallRate > 3095: Failed (14.0/3.0)
+|   |   |   product2_VideoCodec = rtx
+|   |   |   |   product1_DefaultCallRate <= 3199: Connected (33.0/7.0)
+|   |   |   |   product1_DefaultCallRate > 3199
+|   |   |   |   |   product1_SipZrtpAttribute = auto
+|   |   |   |   |   |   product2_Resolution = 1080
+|   |   |   |   |   |   |   product2_AudioCodec = auto
+|   |   |   |   |   |   |   |   product1_MaxReceivedCallRate <= 2025
+|   |   |   |   |   |   |   |   |   product2_MaxTransmitedCallRate <= 3331: Failed (7.0)
+|   |   |   |   |   |   |   |   |   product2_MaxTransmitedCallRate > 3331: Connected (4.0)
+|   |   |   |   |   |   |   |   product1_MaxReceivedCallRate > 2025: Connected (5.0)
+|   |   |   |   |   |   |   product2_AudioCodec = opus-48000
+|   |   |   |   |   |   |   |   product1_MTU <= 1440: Failed (2.0)
+|   |   |   |   |   |   |   |   product1_MTU > 1440: Connected (3.0)
+|   |   |   |   |   |   |   product2_AudioCodec = silk-24000
+|   |   |   |   |   |   |   |   product2_ListenPort = on: Connected (10.0/2.0)
+|   |   |   |   |   |   |   |   product2_ListenPort = off: Failed (12.0/1.0)
+|   |   |   |   |   |   |   product2_AudioCodec = silk-16000
+|   |   |   |   |   |   |   |   product1_MaxTransmitedCallRate <= 1925: Connected (5.0)
+|   |   |   |   |   |   |   |   product1_MaxTransmitedCallRate > 1925: Failed (4.0/1.0)
+|   |   |   |   |   |   |   product2_AudioCodec = g722-16000
+|   |   |   |   |   |   |   |   product2_DefaultCallRate <= 3638: Connected (11.0/3.0)
+|   |   |   |   |   |   |   |   product2_DefaultCallRate > 3638: Failed (4.0/1.0)
+|   |   |   |   |   |   |   product2_AudioCodec = speex-32000
+|   |   |   |   |   |   |   |   product1_SipMode = off: Connected (4.0)
+|   |   |   |   |   |   |   |   product1_SipMode = on: Failed (3.0)
+|   |   |   |   |   |   |   product2_AudioCodec = speex-16000
+|   |   |   |   |   |   |   |   product1_AudioCodec = auto: Failed (0.0)
+|   |   |   |   |   |   |   |   product1_AudioCodec = opus-48000: Failed (0.0)
+|   |   |   |   |   |   |   |   product1_AudioCodec = silk-24000: Failed (3.0)
+|   |   |   |   |   |   |   |   product1_AudioCodec = silk-16000: Failed (0.0)
+|   |   |   |   |   |   |   |   product1_AudioCodec = g722-16000: Failed (0.0)
+|   |   |   |   |   |   |   |   product1_AudioCodec = speex-32000: Failed (0.0)
+|   |   |   |   |   |   |   |   product1_AudioCodec = speex-16000: Failed (0.0)
+|   |   |   |   |   |   |   |   product1_AudioCodec = pcmu-8000: Failed (0.0)
+|   |   |   |   |   |   |   |   product1_AudioCodec = pcma-8000: Connected (2.0)
+|   |   |   |   |   |   |   |   product1_AudioCodec = ilbc-8000: Failed (0.0)
+|   |   |   |   |   |   |   |   product1_AudioCodec = gsm-8000: Failed (1.0)
+|   |   |   |   |   |   |   |   product1_AudioCodec = speex-8000: Failed (0.0)
+|   |   |   |   |   |   |   |   product1_AudioCodec = amr-wb-16000
+|   |   |   |   |   |   |   |   |   product1_MTU <= 868: Failed (3.0/1.0)
+|   |   |   |   |   |   |   |   |   product1_MTU > 868: Connected (3.0)
+|   |   |   |   |   |   |   |   product1_AudioCodec = silk-12000: Failed (5.0/1.0)
+|   |   |   |   |   |   |   |   product1_AudioCodec = silk-8000: Failed (0.0)
+|   |   |   |   |   |   |   |   product1_AudioCodec = telephone-event-80000: Failed (0.0)
+|   |   |   |   |   |   |   product2_AudioCodec = pcmu-8000: Failed (5.0)
+|   |   |   |   |   |   |   product2_AudioCodec = pcma-8000: Failed (1.0)
+|   |   |   |   |   |   |   product2_AudioCodec = ilbc-8000
+|   |   |   |   |   |   |   |   product1_MTU <= 1250: Failed (5.0/2.0)
+|   |   |   |   |   |   |   |   product1_MTU > 1250: Connected (2.0)
+|   |   |   |   |   |   |   product2_AudioCodec = gsm-8000: Failed (3.0/1.0)
+|   |   |   |   |   |   |   product2_AudioCodec = speex-8000: Connected (1.0)
+|   |   |   |   |   |   |   product2_AudioCodec = amr-wb-16000
+|   |   |   |   |   |   |   |   product2_DefaultCallRate <= 2619: Connected (2.0)
+|   |   |   |   |   |   |   |   product2_DefaultCallRate > 2619: Failed (5.0/1.0)
+|   |   |   |   |   |   |   product2_AudioCodec = silk-12000
+|   |   |   |   |   |   |   |   product1_MTU <= 1282: Connected (10.0/2.0)
+|   |   |   |   |   |   |   |   product1_MTU > 1282: Failed (2.0)
+|   |   |   |   |   |   |   product2_AudioCodec = silk-8000: Failed (5.0/1.0)
+|   |   |   |   |   |   |   product2_AudioCodec = telephone-event-80000
+|   |   |   |   |   |   |   |   product2_DefaultCallProtocol = sip: Failed (0.0)
+|   |   |   |   |   |   |   |   product2_DefaultCallProtocol = aim
+|   |   |   |   |   |   |   |   |   product2_DefaultTransportProtocol = auto
+|   |   |   |   |   |   |   |   |   |   product2_MaxTransmitedCallRate <= 1116: Failed (2.0)
+|   |   |   |   |   |   |   |   |   |   product2_MaxTransmitedCallRate > 1116: Connected (3.0)
+|   |   |   |   |   |   |   |   |   product2_DefaultTransportProtocol = udp: Failed (3.0)
+|   |   |   |   |   |   |   |   |   product2_DefaultTransportProtocol = tcp: Failed (0.0)
+|   |   |   |   |   |   |   |   |   product2_DefaultTransportProtocol = tls: Failed (0.0)
+|   |   |   |   |   |   |   |   product2_DefaultCallProtocol = googletalk: Connected (2.0)
+|   |   |   |   |   |   |   |   product2_DefaultCallProtocol = icq
+|   |   |   |   |   |   |   |   |   product2_SipZrtpAttribute = auto
+|   |   |   |   |   |   |   |   |   |   product1_DefaultTransportProtocol = auto: Failed (2.0)
+|   |   |   |   |   |   |   |   |   |   product1_DefaultTransportProtocol = udp: Connected (0.0)
+|   |   |   |   |   |   |   |   |   |   product1_DefaultTransportProtocol = tcp: Connected (1.0)
+|   |   |   |   |   |   |   |   |   |   product1_DefaultTransportProtocol = tls
+|   |   |   |   |   |   |   |   |   |   |   product1_H323Mode = off: Connected (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   product1_H323Mode = on: Failed (3.0/1.0)
+|   |   |   |   |   |   |   |   |   product2_SipZrtpAttribute = true
+|   |   |   |   |   |   |   |   |   |   product1_ListenPort = on
+|   |   |   |   |   |   |   |   |   |   |   product1_MaxReceivedCallRate <= 2899: Connected (2.0)
+|   |   |   |   |   |   |   |   |   |   |   product1_MaxReceivedCallRate > 2899
+|   |   |   |   |   |   |   |   |   |   |   |   product2_MaxTransmitedCallRate <= 1205: Connected (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   product2_MaxTransmitedCallRate > 1205: Failed (16.0/3.0)
+|   |   |   |   |   |   |   |   |   |   product1_ListenPort = off: Failed (5.0)
+|   |   |   |   |   |   |   |   |   product2_SipZrtpAttribute = false: Failed (0.0)
+|   |   |   |   |   |   |   |   product2_DefaultCallProtocol = ippi: Connected (6.0/2.0)
+|   |   |   |   |   |   |   |   product2_DefaultCallProtocol = iptel.org: Connected (1.0)
+|   |   |   |   |   |   |   |   product2_DefaultCallProtocol = irc: Failed (7.0)
+|   |   |   |   |   |   |   |   product2_DefaultCallProtocol = h323: Failed (0.0)
+|   |   |   |   |   |   product2_Resolution = 720: Failed (3.0)
+|   |   |   |   |   |   product2_Resolution = 480: Failed (22.0/6.0)
+|   |   |   |   |   |   product2_Resolution = 360: Failed (0.0)
+|   |   |   |   |   |   product2_Resolution = 240
+|   |   |   |   |   |   |   product1_Resolution = 1080: Failed (0.0)
+|   |   |   |   |   |   |   product1_Resolution = 720: Connected (6.0/2.0)
+|   |   |   |   |   |   |   product1_Resolution = 480: Failed (2.0)
+|   |   |   |   |   |   |   product1_Resolution = 360: Failed (0.0)
+|   |   |   |   |   |   |   product1_Resolution = 240: Failed (0.0)
+|   |   |   |   |   product1_SipZrtpAttribute = true
+|   |   |   |   |   |   product1_MTU <= 1066: Connected (6.0/2.0)
+|   |   |   |   |   |   product1_MTU > 1066: Failed (7.0)
+|   |   |   |   |   product1_SipZrtpAttribute = false
+|   |   |   |   |   |   product2_DefaultCallRate <= 1209: Failed (2.0)
+|   |   |   |   |   |   product2_DefaultCallRate > 1209: Connected (16.0/2.0)
+|   |   |   product2_VideoCodec = ulpfec: Failed (49.0/5.0)
+|   |   |   product2_VideoCodec = vp8
+|   |   |   |   product2_SipZrtpAttribute = auto: Failed (38.0/3.0)
+|   |   |   |   product2_SipZrtpAttribute = true: Connected (4.0/1.0)
+|   |   |   |   product2_SipZrtpAttribute = false: Failed (2.0)
+|   |   product2_Encryption = on: Failed (70.0)
+|   |   product2_Encryption = besteffort
+|   |   |   product1_DefaultCallProtocol = sip: Failed (7.0)
+|   |   |   product1_DefaultCallProtocol = aim: Connected (4.0)
+|   |   |   product1_DefaultCallProtocol = googletalk
+|   |   |   |   product1_SipMode = off: Connected (2.0)
+|   |   |   |   product1_SipMode = on: Failed (2.0)
+|   |   |   product1_DefaultCallProtocol = icq
+|   |   |   |   product1_MTU <= 708: Connected (3.0)
+|   |   |   |   product1_MTU > 708: Failed (3.0)
+|   |   |   product1_DefaultCallProtocol = ippi
+|   |   |   |   product2_ListenPort = on: Connected (2.0)
+|   |   |   |   product2_ListenPort = off: Failed (5.0/1.0)
+|   |   |   product1_DefaultCallProtocol = iptel.org
+|   |   |   |   product2_VideoCodec = auto: Connected (3.0)
+|   |   |   |   product2_VideoCodec = h264: Failed (0.0)
+|   |   |   |   product2_VideoCodec = red: Failed (0.0)
+|   |   |   |   product2_VideoCodec = rtx: Connected (1.0)
+|   |   |   |   product2_VideoCodec = ulpfec: Failed (1.0)
+|   |   |   |   product2_VideoCodec = vp8: Failed (3.0)
+|   |   |   product1_DefaultCallProtocol = irc
+|   |   |   |   product2_DefaultCallRate <= 3685: Connected (5.0)
+|   |   |   |   product2_DefaultCallRate > 3685: Failed (2.0)
+|   |   |   product1_DefaultCallProtocol = h323: Connected (4.0/1.0)
+|   product1_Encryption = on
+|   |   product2_Encryption = off: Failed (252.0)
+|   |   product2_Encryption = on
+|   |   |   product1_DefaultCallProtocol = sip: Failed (22.0)
+|   |   |   product1_DefaultCallProtocol = aim: Connected (2.0)
+|   |   |   product1_DefaultCallProtocol = googletalk: Connected (4.0/1.0)
+|   |   |   product1_DefaultCallProtocol = icq: Failed (3.0/1.0)
+|   |   |   product1_DefaultCallProtocol = ippi: Connected (2.0)
+|   |   |   product1_DefaultCallProtocol = iptel.org: Failed (27.0/3.0)
+|   |   |   product1_DefaultCallProtocol = irc
+|   |   |   |   product2_DefaultTransportProtocol = auto
+|   |   |   |   |   product2_VideoCodec = auto: Connected (0.0)
+|   |   |   |   |   product2_VideoCodec = h264: Connected (5.0)
+|   |   |   |   |   product2_VideoCodec = red: Connected (1.0)
+|   |   |   |   |   product2_VideoCodec = rtx: Connected (3.0)
+|   |   |   |   |   product2_VideoCodec = ulpfec: Failed (4.0/1.0)
+|   |   |   |   |   product2_VideoCodec = vp8
+|   |   |   |   |   |   product2_DefaultCallProtocol = sip: Connected (0.0)
+|   |   |   |   |   |   product2_DefaultCallProtocol = aim: Connected (0.0)
+|   |   |   |   |   |   product2_DefaultCallProtocol = googletalk: Connected (0.0)
+|   |   |   |   |   |   product2_DefaultCallProtocol = icq: Connected (1.0)
+|   |   |   |   |   |   product2_DefaultCallProtocol = ippi: Connected (0.0)
+|   |   |   |   |   |   product2_DefaultCallProtocol = iptel.org: Connected (0.0)
+|   |   |   |   |   |   product2_DefaultCallProtocol = irc
+|   |   |   |   |   |   |   product1_MaxReceivedCallRate <= 2219: Connected (5.0)
+|   |   |   |   |   |   |   product1_MaxReceivedCallRate > 2219: Failed (21.0/9.0)
+|   |   |   |   |   |   product2_DefaultCallProtocol = h323
+|   |   |   |   |   |   |   product1_SipMode = off: Connected (2.0)
+|   |   |   |   |   |   |   product1_SipMode = on: Failed (3.0)
+|   |   |   |   product2_DefaultTransportProtocol = udp: Failed (1.0)
+|   |   |   |   product2_DefaultTransportProtocol = tcp: Failed (2.0)
+|   |   |   |   product2_DefaultTransportProtocol = tls: Failed (3.0)
+|   |   |   product1_DefaultCallProtocol = h323
+|   |   |   |   product2_SipMode = off: Failed (3.0)
+|   |   |   |   product2_SipMode = on: Connected (3.0)
+|   |   product2_Encryption = besteffort
+|   |   |   product1_DefaultCallRate <= 2246
+|   |   |   |   product1_SipZrtpAttribute = auto
+|   |   |   |   |   product2_MaxTransmitedCallRate <= 2408: Connected (3.0)
+|   |   |   |   |   product2_MaxTransmitedCallRate > 2408: Failed (3.0)
+|   |   |   |   product1_SipZrtpAttribute = true
+|   |   |   |   |   product2_SipMode = off: Failed (3.0)
+|   |   |   |   |   product2_SipMode = on: Connected (3.0/1.0)
+|   |   |   |   product1_SipZrtpAttribute = false: Connected (8.0)
+|   |   |   product1_DefaultCallRate > 2246
+|   |   |   |   product1_ListenPort = on
+|   |   |   |   |   product2_MTU <= 1110: Failed (5.0)
+|   |   |   |   |   product2_MTU > 1110: Connected (2.0)
+|   |   |   |   product1_ListenPort = off: Failed (15.0)
+|   product1_Encryption = besteffort
+|   |   product1_DefaultCallProtocol = sip: Failed (12.0)
+|   |   product1_DefaultCallProtocol = aim
+|   |   |   product1_ListenPort = on: Failed (11.0/4.0)
+|   |   |   product1_ListenPort = off: Connected (3.0)
+|   |   product1_DefaultCallProtocol = googletalk: Failed (11.0/1.0)
+|   |   product1_DefaultCallProtocol = icq: Connected (25.0/8.0)
+|   |   product1_DefaultCallProtocol = ippi
+|   |   |   product2_VideoCodec = auto: Failed (1.0)
+|   |   |   product2_VideoCodec = h264
+|   |   |   |   product2_SipMode = off: Failed (9.0/3.0)
+|   |   |   |   product2_SipMode = on: Connected (5.0)
+|   |   |   product2_VideoCodec = red: Connected (3.0)
+|   |   |   product2_VideoCodec = rtx: Connected (2.0)
+|   |   |   product2_VideoCodec = ulpfec: Failed (1.0)
+|   |   |   product2_VideoCodec = vp8: Failed (3.0)
+|   |   product1_DefaultCallProtocol = iptel.org: Failed (35.0/8.0)
+|   |   product1_DefaultCallProtocol = irc
+|   |   |   product2_SipZrtpAttribute = auto: Connected (8.0/2.0)
+|   |   |   product2_SipZrtpAttribute = true: Failed (4.0)
+|   |   |   product2_SipZrtpAttribute = false: Connected (8.0)
+|   |   product1_DefaultCallProtocol = h323: Connected (12.0/2.0)
+product1_VideoCodec = rtx
+|   product1_DefaultCallProtocol = sip: Failed (58.0)
+|   product1_DefaultCallProtocol = aim
+|   |   product1_AudioCodec = auto: Connected (0.0)
+|   |   product1_AudioCodec = opus-48000: Failed (3.0/1.0)
+|   |   product1_AudioCodec = silk-24000: Failed (1.0)
+|   |   product1_AudioCodec = silk-16000: Connected (0.0)
+|   |   product1_AudioCodec = g722-16000: Failed (3.0/1.0)
+|   |   product1_AudioCodec = speex-32000: Failed (2.0/1.0)
+|   |   product1_AudioCodec = speex-16000: Connected (3.0)
+|   |   product1_AudioCodec = pcmu-8000: Connected (1.0)
+|   |   product1_AudioCodec = pcma-8000: Failed (5.0)
+|   |   product1_AudioCodec = ilbc-8000: Connected (1.0)
+|   |   product1_AudioCodec = gsm-8000: Connected (0.0)
+|   |   product1_AudioCodec = speex-8000
+|   |   |   product1_H323Mode = off: Connected (2.0)
+|   |   |   product1_H323Mode = on: Failed (2.0)
+|   |   product1_AudioCodec = amr-wb-16000
+|   |   |   product1_SipMode = off: Connected (2.0)
+|   |   |   product1_SipMode = on: Failed (2.0)
+|   |   product1_AudioCodec = silk-12000: Connected (3.0)
+|   |   product1_AudioCodec = silk-8000: Failed (1.0)
+|   |   product1_AudioCodec = telephone-event-80000: Connected (5.0)
+|   product1_DefaultCallProtocol = googletalk
+|   |   product2_DefaultCallRate <= 2329: Connected (16.0/4.0)
+|   |   product2_DefaultCallRate > 2329: Failed (27.0/4.0)
+|   product1_DefaultCallProtocol = icq
+|   |   product1_Encryption = off: Failed (19.0/2.0)
+|   |   product1_Encryption = on: Failed (11.0/1.0)
+|   |   product1_Encryption = besteffort: Connected (14.0/4.0)
+|   product1_DefaultCallProtocol = ippi
+|   |   product2_VideoCodec = auto: Connected (8.0/2.0)
+|   |   product2_VideoCodec = h264
+|   |   |   product2_MaxTransmitedCallRate <= 3489: Connected (3.0)
+|   |   |   product2_MaxTransmitedCallRate > 3489: Failed (3.0)
+|   |   product2_VideoCodec = red: Failed (12.0/5.0)
+|   |   product2_VideoCodec = rtx: Failed (2.0)
+|   |   product2_VideoCodec = ulpfec: Failed (6.0)
+|   |   product2_VideoCodec = vp8: Failed (4.0)
+|   product1_DefaultCallProtocol = iptel.org
+|   |   product2_VideoCodec = auto
+|   |   |   product2_DefaultCallRate <= 1247: Connected (2.0)
+|   |   |   product2_DefaultCallRate > 1247: Failed (6.0)
+|   |   product2_VideoCodec = h264
+|   |   |   product1_MTU <= 1084: Failed (4.0)
+|   |   |   product1_MTU > 1084: Connected (2.0)
+|   |   product2_VideoCodec = red
+|   |   |   product1_MaxReceivedCallRate <= 2200: Failed (2.0)
+|   |   |   product1_MaxReceivedCallRate > 2200: Connected (3.0)
+|   |   product2_VideoCodec = rtx
+|   |   |   product2_Encryption = off: Failed (1.0)
+|   |   |   product2_Encryption = on: Failed (2.0)
+|   |   |   product2_Encryption = besteffort: Connected (3.0)
+|   |   product2_VideoCodec = ulpfec: Failed (6.0)
+|   |   product2_VideoCodec = vp8: Failed (14.0)
+|   product1_DefaultCallProtocol = irc
+|   |   product1_AudioCodec = auto: Failed (1.0)
+|   |   product1_AudioCodec = opus-48000
+|   |   |   product1_Resolution = 1080: Failed (0.0)
+|   |   |   product1_Resolution = 720: Connected (2.0)
+|   |   |   product1_Resolution = 480: Failed (0.0)
+|   |   |   product1_Resolution = 360: Failed (0.0)
+|   |   |   product1_Resolution = 240: Failed (2.0)
+|   |   product1_AudioCodec = silk-24000
+|   |   |   product2_Encryption = off: Failed (10.0)
+|   |   |   product2_Encryption = on
+|   |   |   |   product1_Resolution = 1080: Failed (3.0)
+|   |   |   |   product1_Resolution = 720: Connected (1.0)
+|   |   |   |   product1_Resolution = 480
+|   |   |   |   |   product2_MTU <= 879: Failed (3.0/1.0)
+|   |   |   |   |   product2_MTU > 879: Connected (2.0)
+|   |   |   |   product1_Resolution = 360: Connected (0.0)
+|   |   |   |   product1_Resolution = 240: Connected (19.0/5.0)
+|   |   |   product2_Encryption = besteffort: Failed (4.0)
+|   |   product1_AudioCodec = silk-16000: Failed (3.0/1.0)
+|   |   product1_AudioCodec = g722-16000: Failed (7.0/1.0)
+|   |   product1_AudioCodec = speex-32000
+|   |   |   product1_DefaultCallRate <= 2363: Connected (2.0)
+|   |   |   product1_DefaultCallRate > 2363: Failed (2.0)
+|   |   product1_AudioCodec = speex-16000: Failed (4.0/1.0)
+|   |   product1_AudioCodec = pcmu-8000: Failed (3.0)
+|   |   product1_AudioCodec = pcma-8000: Failed (1.0)
+|   |   product1_AudioCodec = ilbc-8000: Connected (2.0)
+|   |   product1_AudioCodec = gsm-8000: Connected (3.0/1.0)
+|   |   product1_AudioCodec = speex-8000
+|   |   |   product2_SipMode = off: Connected (3.0)
+|   |   |   product2_SipMode = on: Failed (2.0)
+|   |   product1_AudioCodec = amr-wb-16000: Failed (2.0)
+|   |   product1_AudioCodec = silk-12000: Failed (1.0)
+|   |   product1_AudioCodec = silk-8000: Failed (0.0)
+|   |   product1_AudioCodec = telephone-event-80000
+|   |   |   product1_MaxReceivedCallRate <= 2175: Connected (4.0)
+|   |   |   product1_MaxReceivedCallRate > 2175: Failed (3.0)
+|   product1_DefaultCallProtocol = h323
+|   |   product2_MaxReceivedCallRate <= 4584: Failed (31.0/9.0)
+|   |   product2_MaxReceivedCallRate > 4584: Connected (5.0)
+product1_VideoCodec = ulpfec
+|   product1_DefaultCallProtocol = sip: Failed (63.0)
+|   product1_DefaultCallProtocol = aim
+|   |   product1_MaxTransmitedCallRate <= 2007: Failed (12.0/1.0)
+|   |   product1_MaxTransmitedCallRate > 2007
+|   |   |   product2_H323Mode = off: Connected (13.0/1.0)
+|   |   |   product2_H323Mode = on
+|   |   |   |   product1_MaxReceivedCallRate <= 2139: Connected (5.0)
+|   |   |   |   product1_MaxReceivedCallRate > 2139: Failed (7.0/1.0)
+|   product1_DefaultCallProtocol = googletalk
+|   |   product2_VideoCodec = auto: Failed (9.0/3.0)
+|   |   product2_VideoCodec = h264
+|   |   |   product2_Encryption = off
+|   |   |   |   product1_MaxReceivedCallRate <= 3736: Failed (3.0)
+|   |   |   |   product1_MaxReceivedCallRate > 3736: Connected (2.0)
+|   |   |   product2_Encryption = on: Connected (3.0)
+|   |   |   product2_Encryption = besteffort: Connected (2.0)
+|   |   product2_VideoCodec = red
+|   |   |   product2_SipZrtpAttribute = auto: Failed (5.0/1.0)
+|   |   |   product2_SipZrtpAttribute = true: Failed (0.0)
+|   |   |   product2_SipZrtpAttribute = false: Connected (3.0)
+|   |   product2_VideoCodec = rtx
+|   |   |   product2_SipZrtpAttribute = auto: Failed (1.0)
+|   |   |   product2_SipZrtpAttribute = true: Connected (4.0)
+|   |   |   product2_SipZrtpAttribute = false
+|   |   |   |   product1_Encryption = off: Failed (2.0)
+|   |   |   |   product1_Encryption = on: Failed (0.0)
+|   |   |   |   product1_Encryption = besteffort: Connected (2.0)
+|   |   product2_VideoCodec = ulpfec: Failed (7.0)
+|   |   product2_VideoCodec = vp8: Failed (9.0)
+|   product1_DefaultCallProtocol = icq
+|   |   product2_DefaultTransportProtocol = auto
+|   |   |   product1_ListenPort = on
+|   |   |   |   product1_MaxTransmitedCallRate <= 2841: Failed (4.0)
+|   |   |   |   product1_MaxTransmitedCallRate > 2841: Connected (3.0)
+|   |   |   product1_ListenPort = off: Failed (7.0)
+|   |   product2_DefaultTransportProtocol = udp
+|   |   |   product2_SipZrtpAttribute = auto: Connected (1.0)
+|   |   |   product2_SipZrtpAttribute = true: Connected (4.0)
+|   |   |   product2_SipZrtpAttribute = false: Failed (8.0/3.0)
+|   |   product2_DefaultTransportProtocol = tcp: Connected (13.0/5.0)
+|   |   product2_DefaultTransportProtocol = tls
+|   |   |   product2_SipMode = off: Connected (3.0)
+|   |   |   product2_SipMode = on: Failed (9.0/3.0)
+|   product1_DefaultCallProtocol = ippi
+|   |   product2_MaxReceivedCallRate <= 2080: Failed (12.0/3.0)
+|   |   product2_MaxReceivedCallRate > 2080: Connected (27.0/12.0)
+|   product1_DefaultCallProtocol = iptel.org
+|   |   product2_VideoCodec = auto: Connected (3.0/1.0)
+|   |   product2_VideoCodec = h264: Connected (8.0/3.0)
+|   |   product2_VideoCodec = red
+|   |   |   product1_H323Mode = off: Connected (3.0)
+|   |   |   product1_H323Mode = on: Failed (2.0)
+|   |   product2_VideoCodec = rtx
+|   |   |   product2_DefaultTransportProtocol = auto: Failed (2.0)
+|   |   |   product2_DefaultTransportProtocol = udp: Connected (0.0)
+|   |   |   product2_DefaultTransportProtocol = tcp: Connected (2.0)
+|   |   |   product2_DefaultTransportProtocol = tls: Connected (1.0)
+|   |   product2_VideoCodec = ulpfec: Failed (3.0)
+|   |   product2_VideoCodec = vp8: Failed (12.0)
+|   product1_DefaultCallProtocol = irc
+|   |   product2_SipZrtpAttribute = auto: Failed (46.0/8.0)
+|   |   product2_SipZrtpAttribute = true
+|   |   |   product1_Encryption = off: Failed (3.0)
+|   |   |   product1_Encryption = on: Connected (3.0)
+|   |   |   product1_Encryption = besteffort
+|   |   |   |   product2_Encryption = off: Failed (2.0)
+|   |   |   |   product2_Encryption = on: Connected (0.0)
+|   |   |   |   product2_Encryption = besteffort: Connected (3.0)
+|   |   product2_SipZrtpAttribute = false: Connected (13.0/4.0)
+|   product1_DefaultCallProtocol = h323
+|   |   product1_ListenPort = on: Connected (22.0/10.0)
+|   |   product1_ListenPort = off: Failed (23.0/9.0)
+product1_VideoCodec = vp8: Failed (1105.0)
+
+Number of Leaves  : 	471
+
+Size of the tree : 	648
+
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        4100               91.1111 %
+Incorrectly Classified Instances       400                8.8889 %
+Kappa statistic                          0.7433
+Mean absolute error                      0.1252
+Root mean squared error                  0.2502
+Relative absolute error                 35.2557 %
+Root relative squared error             59.3819 %
+Coverage of cases (0.95 level)          99.9778 %
+Mean rel. region size (0.95 level)      67.9222 %
+Total Number of Instances             4500     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.953     0.228      0.933     0.953     0.943      0.965    Failed
+                 0.772     0.047      0.831     0.772     0.8        0.965    Connected
+Weighted Avg.    0.911     0.186      0.909     0.911     0.91       0.965
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3298  163 |    a = Failed
+  237  802 |    b = Connected
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        3473               77.1778 %
+Incorrectly Classified Instances      1027               22.8222 %
+Kappa statistic                          0.3215
+Mean absolute error                      0.2429
+Root mean squared error                  0.4136
+Relative absolute error                 68.3799 %
+Root relative squared error             98.1439 %
+Coverage of cases (0.95 level)          92.8667 %
+Mean rel. region size (0.95 level)      69.9667 %
+Total Number of Instances             4500     
+
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.874     0.57       0.836     0.874     0.855      0.781    Failed
+                 0.43      0.126      0.507     0.43      0.465      0.781    Connected
+Weighted Avg.    0.772     0.467      0.76      0.772     0.765      0.781
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3026  435 |    a = Failed
+  592  447 |    b = Connected
+
